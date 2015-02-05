@@ -1,0 +1,13 @@
+title : Fever of Time
+tagline: I'm feeling it ._.
+author :
+  name : Issam
+  email : slamice@gmail.com
+  github : slamice
+  twitter : susnote
+  feedburner : feedname
+
+navigation :
+  - archive.html
+  - pages.html
+  - about.md
