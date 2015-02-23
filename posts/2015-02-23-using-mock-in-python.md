@@ -1,5 +1,10 @@
-Testing with mock in Python:
-============================
+---
+title : Testing with mock in Python
+permalink/url: using-mock-with-python
+date: 23/02/2015
+tags: [coding, python, work]
+description: Mocking in Python
+---
 
 Mocking is pretty awesome in python, especially when using the [Mock](http://www.voidspace.org.uk/python/mock/) library. It simplifies making stubs when testing, covers partial mocking, setting custom return values, how they were called, etc.
 
