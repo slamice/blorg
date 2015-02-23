@@ -10,7 +10,7 @@ Mocking is pretty awesome in python, especially when using the [Mock](http://www
 
 However there are a few pitfalls when initially working with Mock. Some of these things are pretty obvious, but this is a quick reference for a few gotchas I found while mocking a few projects.
 
-##### side_effect vs return_value:
+##### *side_effect* vs *return_value*:
 You'd only use `side_effect` if you want to test something that happens in a function instead of a return value. For example if you want to test exceptions that are raised in a method, use `side_effect`:
 
     dork_mock = mock.Mock()
@@ -82,13 +82,14 @@ The assertion returns false because `owner` is made when instantiating the `Owne
             phone = Phone()
             assert phone.owner.get_name() == "awesome guy" # True
 
-`nose`:
--------
 
-#### Running a single test file:
+One final thought on `nose`, while we're talking about testing...
+
+#### Running a single test file with nose:
 
 Technically, we should be running the entire test suite to just to be sure a change didn't break another test. However, if your tests don't yet run in parallel and every 10 seconds counts... I think it wastes a lot of time as the test suite grows. So for those curious, here is how to run a single test using **nose**:
 
-`nosetests -v -s test_name_of_file.py`
-
-**-s** to see all your print and debug statements (doesn't gobble up stdouts), **-v** for verbose mode, showing all test run details
+    `nosetests -v -s test_name_of_file.py`
+    
+    **-s** to see all your print and debug statements (doesn't gobble up stdouts)
+    **-v** for verbose mode, showing all test run details
