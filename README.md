@@ -2,7 +2,7 @@ Updating blog Manually:
 
     git add .
     git commit -m "Updated ..."
-    git push origin draft
+    git push origin master
 
     ruhoh compile
     cd compiled
